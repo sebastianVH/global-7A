@@ -1,0 +1,13 @@
+.titulo {
+    color: rgb(255, 21, 0);
+}
+
+#titulo {
+}
+
+div{
+    background-color: rgb(144, 144, 144);
+    margin: 100px;
+    padding: 0.25em;
+    text-align: center;
+}
