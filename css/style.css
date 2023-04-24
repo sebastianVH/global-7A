@@ -1,13 +1,48 @@
-.titulo {
-    color: rgb(255, 21, 0);
+/*Etiquetas*/
+
+form {
+    display: flex;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-#titulo {
+label {
+    margin-bottom: 1px;
 }
 
-div{
-    background-color: rgb(144, 144, 144);
-    margin: 100px;
-    padding: 0.25em;
-    text-align: center;
+input,select {
+    padding: 5px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    border: 1px solid #a4a4a4;
+}
+
+select {
+    width: 20%;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    color: #fff;
+}
+
+#cancelar {
+    background-color: rgb(255, 82, 82);
+}
+
+#guardar {
+    background-color: green;
+}
+
+#cancelar:hover {
+    background-color: rgb(152, 74, 74)
+}
+
+#guardar:hover{
+    background-color: rgb(1, 80, 1)
 }

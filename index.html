@@ -4,82 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script></script>
-    <link rel="stylesheet" href="">
-    <title>Introduccion a HTML y CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formularios en HTML</title>
 </head>
 <body>
-    <nav style="background-color: lightgreen;
-    position: center;
-	text-align: center;"> 
-        <a href="">Inicio</a>
-        <a href="http://">Favoritos</a>
-        <a href="http://"> Acerca de Nosotros</a>
-    </nav>
-    <!-- Las listas desordenadas se guian solo por orden siguiente-->
-    <ul>
-        <li> Texto 1</li>
-        <li> Texto 2</li>
-        <li> Texto 3</li> 
-    </ul>
+    <h1>Alta de Usuario</h1>
+    <form action="" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required> <br>
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" name="" id=""><br>
 
-    <!--Las listas ordenadas tienen un orden NUMERICO para mostrarse-->
-    <ol start="" type="">
-        <li>Punto 1</li>
-        <li>Punto 2</li>
-        <li>Punto 3</li>
-    </ol>
-    
-    <!--Pondremos un comentario dentro de HTML-->
-    <h1>Hola mundo</h1> <!-- Nos dan un titulo como etiqueta -->
-    <h2>Hola mundo</h2>
-    <h3>Hola mundo</h3>
-    <h4>Hola mundo</h4>
-    <h5>Hola mundo</h5>
-    <h6>Hola mundo</h6>
-    <!-- Parrafo-->
-    <p> Esta es una pagina que estoy escribiendo en HTML</p>
+        <label for="documento">DNI</label>
+        <input type="text" name="" id="" placeholder="ingrese el DNI sin puntos"> <br>
 
-    <!-- Etiquetas para negrita y para cursiva-->
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad"> <br>
 
-    <p> Este parrafo contiene <br>
-         etiquetas en <br>
-         <b>negrita</b><br>
-          y cursiva</p>
-    <br>
-    <!-- Es una etiqueta que utilizaremos de marcado-->
-    <span> </span>
+        <label for="genero">Sexo</label>
+        <select name="genero" id="genero">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="O">Otros</option>
+        </select> <br>
+        
+        <label for="altura">Altura</label>
+        <input type="number" name="altura" id="altura" step="0.01" required> <br>
 
-    <p>Parrafo 1</p>
-    <br>  <!-- br nos permite hacer un espacio entre etiquetas-->
-    <p> Este es un parrafo 2</p> 
+        <label for="email">Email</label>
+        <input type="email" name="" id=""><br>
 
-    <!-- Subrayados-->
-    <u> Esto es un texto subrayado</u><br>
-    <small> Este texto es mas pequeño de lo normal</small><br>
-    <big> Este texto es mas grande de lo normal </big><br>
-    <em> Este texto esta en cursiva</em><br>
-    <s>Este texto esta tachado</s><br>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="" id=""> <br>
 
-    <p> Dentro de este parrafo pondremos letras <small>chicas</small> , <big>grandes</big> , <u>subrayadas</u>, <s>tachadas</s>,y <em>cursiva</em> </p>
-    
-    <p> Parrafo comun y con un <sub>Sub indice</sub></p>
-
-
-    <!-- Etiquetas para otras utilidades-->
-    <!-- etiqueta a: nos permite abrir un hipervinculo en la misma pagina (target="_self") o en una nueva en blanco (target="_blank")-->
-    <a href="https://www.fifa.com" target="_blank">Pagina oficial de la Fifa</a>
-    <div>
-    <img src="https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/6420b-pikachu-sentado-png.png?resize=450%2C450&ssl=1" alt="">
-    <img src="img/147.jpg" width="400" height="300" alt="">
-</div>
-<div>
-    <iframe width="600" height="300" src="https://www.youtube.com/embed/Easqg4SUl2Q" title="Hernán Cattáneo at the Cercle Festival 2022 (A380 stage) in France" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <iframe src="" width="600" height="300" autoplay="false" frameborder="0"></iframe>
-</div>
-
-
-
+        <label for="password">Contraseña</label>
+        <input type="password"> <br>
+        <div>
+        <button name="guardar" id="guardar" type="submit">Guardar</button>
+        <button name="cancelar" id="cancelar" type="reset"> Cancelar</button>
+        </div>
+    </form>
 
 </body>
 </html>
