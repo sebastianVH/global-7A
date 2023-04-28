@@ -1,48 +1,47 @@
 /*Etiquetas*/
-
-form {
-    display: flex;
-    margin: 10px;
-    font-family: Arial, sans-serif;
-    align-items: flex-start;
-    flex-direction: column;
+body {
+  background-color: rgb(139, 243, 254);
 }
 
-label {
-    margin-bottom: 1px;
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-input,select {
-    padding: 5px;
-    margin-bottom: 1px;
-    border-radius: 5px;
-    border: 1px solid #a4a4a4;
+table{
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid grey;
+  background-color: beige;
+  border-collapse: collapse;
+
 }
 
-select {
-    width: 20%;
+th{
+  border: 1px solid black;
+  background-color: rgb(173, 254, 143);
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  padding: 6px;
 }
 
-button {
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 15px;
-    color: #fff;
+td {
+  border: 1px solid black;
+  background-color: azure;
+  font-family: monospace;
+  text-align: center;
+  padding: 4px;
 }
 
-#cancelar {
-    background-color: rgb(255, 82, 82);
+img {
+  /*width: 100px;*/
+ /*height: 100px;*/
+  width: 70%;
+  aspect-ratio: 7/6;
+  object-fit: contain;
 }
-
-#guardar {
-    background-color: green;
-}
-
-#cancelar:hover {
-    background-color: rgb(152, 74, 74)
-}
-
-#guardar:hover{
-    background-color: rgb(1, 80, 1)
-}
+/*
+#messi{
+  width: 8px;
+}*/
