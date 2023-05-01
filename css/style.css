@@ -1,48 +1,78 @@
-/*Etiquetas*/
-
-form {
-    display: flex;
-    margin: 10px;
-    font-family: Arial, sans-serif;
-    align-items: flex-start;
-    flex-direction: column;
+*{
+	text-align: center; /*todos los elementos en el centro*/
 }
 
-label {
-    margin-bottom: 1px;
+body{
+	margin: auto;
+	background-color: black;
 }
 
-input,select {
-    padding: 5px;
-    margin-bottom: 1px;
-    border-radius: 5px;
-    border: 1px solid #a4a4a4;
+header{
+	background-color: aqua;
+	padding-top: 1px;
 }
 
-select {
-    width: 20%;
+nav{
+	background-color: orange;
 }
 
-button {
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 15px;
-    color: #fff;
+nav ul{
+	list-style: none; /* le quitamos el diseño de lista*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around ; /*mismo espacio entre todos los elementos*/
 }
 
-#cancelar {
-    background-color: rgb(255, 82, 82);
+nav a{
+	text-decoration: none;
+	display: block;
+	color: darkred;
+	font-family:'Courier New', Courier, monospace;
+	font-size:xx-large;
+	padding: 5px 10px;
 }
 
-#guardar {
-    background-color: green;
+nav li{
+	padding: 0px;
+	margin: 0px;
 }
 
-#cancelar:hover {
-    background-color: rgb(152, 74, 74)
+nav a:hover{
+	color: rgb(255, 255, 255);
 }
 
-#guardar:hover{
-    background-color: rgb(1, 80, 1)
+main{
+	background-color: burlywood;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+	background-color: yellow;
+	margin: 10px;
+	padding: 10px;
+	max-width: 200px;
+	min-height: 300px;
+}
+
+article{
+	background-color: rgb(5, 252, 162);
+	margin: 10px;
+	padding: 10px;
+	min-height: 150px ;
+}
+
+aside{
+	background-color: violet;
+	margin: 10px;
+	padding: 10px;
+	max-width: 200px;
+	min-height: 300px;
+}
+
+footer{
+	background-color: aqua;
+	padding: 10px;
 }
