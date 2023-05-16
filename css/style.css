@@ -1,78 +1,91 @@
-*{
-	text-align: center; /*todos los elementos en el centro*/
-}
-
-body{
-	margin: auto;
-	background-color: black;
-}
-
-header{
-	background-color: aqua;
-	padding-top: 1px;
-}
-
-nav{
-	background-color: orange;
-}
-
-nav ul{
-	list-style: none; /* le quitamos el diseño de lista*/
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content:space-around ; /*mismo espacio entre todos los elementos*/
-}
-
-nav a{
-	text-decoration: none;
-	display: block;
-	color: darkred;
-	font-family:'Courier New', Courier, monospace;
-	font-size:xx-large;
-	padding: 5px 10px;
-}
-
-nav li{
-	padding: 0px;
-	margin: 0px;
-}
-
-nav a:hover{
-	color: rgb(255, 255, 255);
-}
-
-main{
-	background-color: burlywood;
+/* Estilos generales */
+body {
+	font-family: Arial, sans-serif; /*Fuentes*/
+	margin: 0;
+	padding: 0;
+	text-align: center;
 	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, rgb(0, 238, 255),white, rgb(0,238,255)); /* gradiente de colores*/
+  }
+  
+  /* Estilos para el encabezado */
+
+  header {
+	min-width: 400px;
 	display: flex;
-	flex-wrap: wrap;
-}
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	background-image: url('../img/ropa-usada.png');
+	background-size: cover;
+	height: 200px;
+	color: white;
+	padding: 20px;
+	border: 2px solid black;
+	border-style:groove
+  }
 
-section {
-	background-color: yellow;
+  h1 {
+	border: 2px solid rgb(40, 93, 2);
+	font-size: 50px;
+	margin: 20px; /* margen entre el elemento y el proximo mas cercano */
+	padding: 10px;  /* margen que indica diferencia entre el BORDE y el CONTENIDO*/
+	color: black;
+	text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white; /* muestra sombras desde angulos distintos*/
+  }
+  
+  nav ul { 
+	list-style:none ; /* definir que tipo de estilo tiene mis items en la lista*/
 	margin: 10px;
-	padding: 10px;
-	max-width: 200px;
-	min-height: 300px;
-}
-
-article{
-	background-color: rgb(5, 252, 162);
+	padding: 5px;
+  }
+  
+  nav li {
+	display: inline-block;
 	margin: 10px;
+  }
+  
+  nav a {
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
+  
+  nav a:hover { /* nos indica el comportamiento de un elemento al momento de POSCIONARNOS ENCIMA*/
+	font-size: 35px;
+	color: rgb(249, 113, 71);
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+	min-height: 600px; /* min: no da por referencia un tamaño MINIMO que tendra.*/
+	display: flex;
+	flex-wrap: wrap; /* con warp, mis elemento no cambiaran de tamaño, pero se acomodaran dentro de mi contenedor*/
+	flex-direction: row;
+	justify-content: space-evenly; /* es el espacio entre TODA MI FILA Y SUS ELEMENTOS. */
+	align-items:center;
+	justify-self:center;
+	margin: 20px;
+  }
+  
+  section {
+	max-width: 200px; /* tu ancho maximo es de 200px*/
+	min-height: 250px;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border: 2px solid #ccc;
+	padding: 20px;
+	margin: 3px;
+	background: linear-gradient(to top, rgb(226, 224, 224),white,rgb(189, 189, 189));
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+	background-color: #f92d2d;
+	color: #ffffff;
 	padding: 10px;
-	min-height: 150px ;
-}
-
-aside{
-	background-color: violet;
-	margin: 10px;
-	padding: 10px;
-	max-width: 200px;
-	min-height: 300px;
-}
-
-footer{
-	background-color: aqua;
-	padding: 10px;
-}
+	text-align: center;
+	border: 5px solid gray;
+  }
