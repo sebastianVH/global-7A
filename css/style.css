@@ -1,78 +1,37 @@
-*{
-	text-align: center; /*todos los elementos en el centro*/
-}
+body { 
+	display: grid;
+	grid-template-areas: 
+	  "nav header header header"
+	  "nav article div ads"
+	  "nav article div ads"
+	  "nav footer footer ads";
+	grid-template-rows: 60px 120px 1fr 60px;
+	grid-template-columns: 20% 1fr 1fr 15%;
+	grid-gap: 10px;
+	height: 100vh;
+	margin: 0;
+	}
+  header, footer, article, nav, div {
+	padding: 20px;
+	background: gold;
+  }
+  #pageHeader {
+	grid-area: header;
+  }
+  #pageFooter {
+	grid-area: footer;
+  }
+  #mainArticle { 
+	grid-area: article;      
+	}
+  #mainNav { 
+	grid-area: nav; 
+	}
+  #siteAds { 
+	grid-area: ads; 
+	}
 
-body{
-	margin: auto;
-	background-color: black;
-}
-
-header{
-	background-color: aqua;
-	padding-top: 1px;
-}
-
-nav{
-	background-color: orange;
-}
-
-nav ul{
-	list-style: none; /* le quitamos el diseño de lista*/
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content:space-around ; /*mismo espacio entre todos los elementos*/
-}
-
-nav a{
-	text-decoration: none;
-	display: block;
-	color: darkred;
-	font-family:'Courier New', Courier, monospace;
-	font-size:xx-large;
-	padding: 5px 10px;
-}
-
-nav li{
-	padding: 0px;
-	margin: 0px;
-}
-
-nav a:hover{
-	color: rgb(255, 255, 255);
-}
-
-main{
-	background-color: burlywood;
-	justify-content: center;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-section {
-	background-color: yellow;
-	margin: 10px;
-	padding: 10px;
-	max-width: 200px;
-	min-height: 300px;
-}
-
-article{
-	background-color: rgb(5, 252, 162);
-	margin: 10px;
-	padding: 10px;
-	min-height: 150px ;
-}
-
-aside{
-	background-color: violet;
-	margin: 10px;
-	padding: 10px;
-	max-width: 200px;
-	min-height: 300px;
-}
-
-footer{
-	background-color: aqua;
-	padding: 10px;
-}
+/* grid-template-areas: 
+  "nav header header"
+  "nav article ads"
+  "nav footer ads"; */
