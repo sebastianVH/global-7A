@@ -1,91 +1,88 @@
-/* Estilos generales */
-body {
-	font-family: Arial, sans-serif; /*Fuentes*/
-	margin: 0;
-	padding: 0;
+body{
 	text-align: center;
-	justify-content: center;
-	align-items: center;
-	background: linear-gradient(to right, rgb(0, 238, 255),white, rgb(0,238,255)); /* gradiente de colores*/
-  }
-  
-  /* Estilos para el encabezado */
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"main main"
+	"footer footer";
+	grid-template-rows: 20% 1fr 5%;
+	grid-template-columns: 1fr 1fr;
+	height: 100vh;
+	margin: 0;
+}
 
-  header {
-	min-width: 400px;
+h1{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 2.4em;
+}
+
+
+#mainHeader{
+	grid-area: header;
+}
+
+#mainBody{
+	grid-area: main;
+}
+
+#mainFooter{
+	grid-area: footer;
+}
+
+header{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: rgb(167, 167, 167);
+}
+
+nav ul{
+	font-size: 1.4rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	margin: 1em;
+}
+
+
+a {
+	text-decoration-line:none;
+}
+
+li:hover{
+	color: aliceblue;
+	font-size: 1.5rem;
+}
+
+.card {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	align-content: center;
-	background-image: url('../img/ropa-usada.png');
-	background-size: cover;
-	height: 200px;
-	color: white;
-	padding: 20px;
-	border: 2px solid black;
-	border-style:groove
-  }
+	background-color: rgb(232, 247, 35);
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 15px;
+	width: min-content;
+	height: max-content;
+	margin: 1em;
+	padding: 1em;
+}
 
-  h1 {
-	border: 2px solid rgb(40, 93, 2);
-	font-size: 50px;
-	margin: 20px; /* margen entre el elemento y el proximo mas cercano */
-	padding: 10px;  /* margen que indica diferencia entre el BORDE y el CONTENIDO*/
-	color: black;
-	text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white; /* muestra sombras desde angulos distintos*/
-  }
-  
-  nav ul { 
-	list-style:none ; /* definir que tipo de estilo tiene mis items en la lista*/
-	margin: 10px;
-	padding: 5px;
-  }
-  
-  nav li {
-	display: inline-block;
-	margin: 10px;
-  }
-  
-  nav a {
-	font-size: 25px;
-	color: white;
-	text-decoration: none;
-	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-  }
-  
-  nav a:hover { /* nos indica el comportamiento de un elemento al momento de POSCIONARNOS ENCIMA*/
-	font-size: 35px;
-	color: rgb(249, 113, 71);
-  }
-  
-  /* Estilos para el contenido principal */
-  main {
-	min-height: 600px; /* min: no da por referencia un tamaño MINIMO que tendra.*/
-	display: flex;
-	flex-wrap: wrap; /* con warp, mis elemento no cambiaran de tamaño, pero se acomodaran dentro de mi contenedor*/
-	flex-direction: row;
-	justify-content: space-evenly; /* es el espacio entre TODA MI FILA Y SUS ELEMENTOS. */
-	align-items:center;
-	justify-self:center;
-	margin: 20px;
-  }
-  
-  section {
-	max-width: 200px; /* tu ancho maximo es de 200px*/
-	min-height: 250px;
-	flex-direction: row;
-	justify-content: space-evenly;
-	border: 2px solid #ccc;
-	padding: 20px;
-	margin: 3px;
-	background: linear-gradient(to top, rgb(226, 224, 224),white,rgb(189, 189, 189));
-  }
-  
-  /* Estilos para el pie de página */
-  footer {
-	background-color: #f92d2d;
-	color: #ffffff;
-	padding: 10px;
-	text-align: center;
-	border: 5px solid gray;
-  }
+.card img {
+	padding: 1em;
+	width: 300px;
+	object-fit: contain;
+	aspect-ratio: 3/2;
+}
+
+.mainText {
+	background-image: linear-gradient(to right,rgb(164, 221, 204),rgb(0, 233, 87));
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(370px, 1fr));
+	justify-items: center;
+}
+
+
+
+.mainFooter{
+	background-color: rgb(136, 1, 1);
+	color: aliceblue;
+}
