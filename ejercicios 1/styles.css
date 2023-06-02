@@ -1,0 +1,34 @@
+
+body {
+    /*color al texto*/ color: #00F;
+    /* color de fondo*/ background-color: #CFC;
+    /* estilo de fuente*/ font-family: Georgia, 'Times New Roman', Times, serif;
+    /* tamaño texto*/ font-size: 16px;
+}
+
+h1 {
+    color: #f00;
+    font-family: Verdana,Calibri, sans-serif;
+    font-size: 32px;
+}
+
+h2 {
+    color: #a00;
+    font-family: Verdana,Calibri,sans-serif;
+    font-size: 24px;
+}
+
+/* llamamos a una class para aplicar estilos*/
+
+.titulosLi {
+    color: #060;
+}
+
+.sustantivos {
+    font-size: 20px;
+}
+
+.remarcados {
+    color: #fff;
+    background-color: #000;
+}
