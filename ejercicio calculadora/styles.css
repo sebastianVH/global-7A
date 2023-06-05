@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(191, 191, 191);
+}
+
+.calculadora{
+    max-width: 300px;
+    margin: 25% auto; /* con mi primer parametro digo que no tiene margin arriba y abajo. Con el segundo indico que tiene un margin AUTOMATICO con la izquierda y derecha*/
+    background-color: rgb(246, 225, 197);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.calculadoraPantalla {
+    background-color: rgb(223, 250, 250);
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    margin: 5px 3px ; /* margin puede llevar hasta 4 posiciones*/
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 25px;
+    padding: 3px;
+}
+
+.calculadoraBoton{
+    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calculadoraBotonBorrar {
+    background-color: #b20202;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calculadoraBotones {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+
+/* Hover: aplica propiedades a un elemento, cuando nos posicionamos sobre el*/
+
+.calculadoraBoton:hover {
+    background-color: white;
+}
+
+.calculadoraBotonBorrar:hover {
+    background-color: white;
+    color: #b20202;
+}
